@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <style>
+        body{
+            background-color: #ebccd1;
+        }
+        
+        .navbar {
+            margin-top: 0px;
+            font-family: 'Baloo Bhai 2', cursive;
+        }
+
+        .navbar li {
+            display: inline-block;
+            margin-left: 3%;
+            font-size: 138%;
+            margin-right: 7px;
+        }
+
+        .navbar li a:hover {
+            color: blue;
+            cursor: pointer;
+        }
+        .navbar li a{
+            color: red;
+        }
+       
+    </style>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&display=swap">
+</head>
+<body>
+    <nav height=50px>
+        <div class="second">
+            logo
+            <ul align="right" class="navbar">
+                <li><a href="/">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <!-- <li><a href="Register.html">Register/Login</a></li> -->
+            </ul>
+        </div>
+    </nav>
+    <form method="GET" action="action.php">
+        <table border="1" align="center" width="400" bgcolor="#CCCCCC" >
+                <h1 align="center">Register Here</h1>
+                <p align="center"> Please fill the details to create an account with us</p>
+                <!-- <hr> -->
+                
+                <tr>
+                    <th style="background: none;"> Name</th>
+                    <td><input type="text" name="fn" id="fn1" maxlength="30" title="Enter your first name"
+                        placeholder="Enter your first and last name" size="30" required /></td>
+                    </tr>
+                    
+                    <tr>
+                        <th>Password</th>
+                        <td><input type="password" name="pwd" id="pwd1" placeholder="Enter your password" maxlength="15"
+                            size="30" /></td>
+                        </tr>
+                        <tr>
+                            <th>Confirm Password</th>
+                            <td><input type="password" name="pwd2" id="pwd1" placeholder="Re-Enter your password" size="30" /></td>
+                        </tr>
+                        <tr>
+                            <th> Email</th>
+                            <td><input type="email" name="email" id="email1" placeholder="Enter your email id" size="30" /></td>
+            </tr>
+            <tr>
+                <th>Mobile Number</th>
+                <td><input type="number" name="number1" id="number2" placeholder="Enter your mobile number" size="30" maxlength="12"/>
+                </td>
+            </tr>
+            <tr>
+                <th>Address</th>
+                <td><textarea name="add" id="address" rows="8" cols="20" size="30"
+                    placeholder="Enter your current address"></textarea></td>
+                </tr>
+                <tr>
+                    <th>Gender</th>
+                    <td>
+                        Male<input type="radio" name="g" id="gender" value="m" />
+                        Female<input type="radio" name="g" id="gender" value="f" />
+                    </td>
+                </tr>
+                <tr>
+                    <th>Interest</th>
+                <td>
+                    <select multiple id="Interest" >
+                        <option value="-" selected="selected" disabled="disabled">Select your Interest</option>
+                        <option value="ar">Articals</option>
+                        <option value="po">Poems</option>
+                        <option value="blog">Blogs</option>
+                        <option value="art">Arts</option>
+                        <option value="pho">PhotoGraphy</option>
+                    </select>
+                    <span>Note: You can select multiple interest</span>
+                </td>
+            </tr>
+            <tr>
+                <th>Address of organization</th>
+                <td><textarea name="add" id="address" rows="8" cols="20" size="30"
+                    placeholder="If you have organization then enter the address of organization"></textarea> </td>
+                </tr>
+                <tr>
+                    <th>DOB</th>
+                    <td><input type="text" name="dob" id="dob1" placeholder="dd/mm/yyyy" /></td>
+                </tr>
+                <tr>
+                    <th>State</th>
+                    <td>
+                        <select name="state" id="state">
+                            <option value="-" selected="selected" disabled="disabled">Select your state/UT</option>
+                            <option id="state" value="ap">andhrapradesh</option>
+                            <option id="state" value="ar">Arunachal Pradesh</option>
+                            <option id="state" value="as">Assam</option>
+                            <option id="state" value="br">Bihar</option>
+                            <option id="state" value="cg">chhatisgarh</option>
+                            <option id="state" value="ga">Goa</option>
+                            <option id="state" value="gj">Gujarat</option>
+                            <option id="state" value="hr">Hariyana</option>
+                            <option id="state" value="hp">Himachal Pradesh</option>
+                            <option id="state" value="jk">Jammu Kashmir</option>
+                            <option id="state" value="jh">Jharkhand</option>
+                            <option id="state" value="ka">Karnataka</option>
+                            <option id="state" value="kl">karala</option>
+                            <option id="state" value="mp">Madhya Pradesh</option>
+                            <option id="state" value="mh">Maharashtra</option>
+                            <option id="state" value="mn">Manipur</option>
+                            <option id="state" value="ml">Meghalaya</option>
+                            <option id="state" value="mz">Mizoram</option>
+                            <option id="state" value="nl">Nagaland</option>
+                            <option id="state" value="or">Orissa</option>
+                            <option id="state" value="pb">Panjab</option>
+                            <option id="state" value="rj">Rajasthan</option>
+                            <option id="state" value="sk">Sikkim</option>
+                            <option id="state" value="tn">Tamilnadu</option>
+                            <option id="state" value="tr">Tripura</option>
+                            <option id="state" value="uk">Uttarakhand</option>
+                            <option id="state" value="up">Utter Pradesh</option>
+                            <option id="state" value="wb">West Bengal</option>
+                            <option id="state" value="an">Andaman and Nicobar Islands</option>
+                            <option id="state" value="ch">chandigarh</option>
+                            <option id="state" value="dh">Dadra and Nagar haveli</option>
+                            <option id="state" value="dd">Daman and Diu</option>
+                            <option id="state" value="dl">Dilhi</option>
+                            <option id="state" value="ld">Lakshadweep</option>
+                            <option id="state" value="py">Pondicherry</option>
+                        </select>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center"><input type="submit" value="Submit" />
+                    <input type="reset" value="Reset" />
+                </td>
+            </tr>
+        </table>
+        <p align="center">By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+        
+        <div class="container signin">
+            <p align="center">Already have an account? <a href="login.html">Sign in</a></p>
+        </div>
+    </form>
+</body>
+
+</html>
